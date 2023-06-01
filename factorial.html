@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>factorial</title>
+    </head>
+    <body>
+        <center>finding factorial</center>
+        <script>
+            let num=parseInt(prompt('enter +ve integer'));
+            if(num<0)
+            document.write('factorial of -ve integer doesnot exist');
+            else if(num==0)
+            document.write(`factorial of ${num}=1`);
+            else{
+                let fact=1;
+                for(i=1;i<=num;i++)
+                fact=fact*i;
+                document.write(`factorial of ${num}=${fact}`);
+            }
+        </script>
+    </body>
+</html>
