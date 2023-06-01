@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Addition function</p>
+        <script>
+            function add(a,b){
+                document.write("named function<br>");
+                document.write(a+" + "+b+"=");
+                return (a+b);
+            }
+            var mul=(c,d)=>{
+                document.write("<br>arrow function<br>");
+                document.write(c+" ✕ "+d+"=");
+                return (c*d);
+            }
+            var sq=function(s){
+                document.write("<br>anonymus function<br>");
+                document.write(s+" square=");
+                return (s*s);
+            }
+            document.write(add(5,3));
+            document.write(mul(3,5));
+            document.write(sq(3));
+        </script>
+    </body>
+</html>
